@@ -1,1 +1,17 @@
-<h3>I'm in the app component</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ol>
+                <li>Add a button which says 'Display details'</li>
+                <li>Add a paragraph with any contant of your choice (e.g. 'Secret Password = tuna')</li>
+                <li>Toggle the displaying of that paragraph with he button created in the first step</li>
+                <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number)</li>
+                <li>Starting at the 5 th log item, give all future log items a blue backgroung (via ngStyle) and white color (ngClass)</li>
+            </ol>
+            <hr>
+            <button class="btn btn-primary" (click)="showSecret = !showSecret">Display details</button>
+
+            <p *ngIf="showSecret">Secret Password = tuna</p>
+        </div>
+    </div>
+</div>
